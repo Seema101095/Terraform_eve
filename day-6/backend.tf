@@ -1,0 +1,8 @@
+terraform {
+  backend "s3" {
+    bucket = "terraformevstorage"
+    key= "terrafom.tfstate"
+    region= "us-east-1"
+    
+  }
+}
