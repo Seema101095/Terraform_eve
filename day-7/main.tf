@@ -24,3 +24,12 @@ resource "aws_subnet" "subnet2" {
     }
     depends_on = [ aws_vpc.myvpc ]
 }
+
+resource "aws_subnet" "subnet3" {
+    vpc_id = aws_vpc.myvpc.id
+    cidr_block = "10.0.3.0/24"
+    tags = {
+      name="subnet3"
+    }
+    depends_on = [ aws_vpc.myvpc ]
+}
