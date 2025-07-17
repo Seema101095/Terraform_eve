@@ -4,7 +4,7 @@ resource "aws_instance" "ec2" {
   
 }
 
-resource "aws_s3_bucket" "name" {
+resource "aws_s3_bucket" "mybucket" {
     bucket = var.buck_name
   
 }
